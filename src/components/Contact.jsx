@@ -29,8 +29,17 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!form.name || !form.email || !form.message) {
+      alert("All fields are required.");
+      return;
+    }
+    if (!emailRegex.test(form.email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
     setLoading(true);
-
 
     emailjs
       .send(
@@ -90,6 +99,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What's your good name?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              required
             />
           </label>
           <label className='flex flex-col'>
@@ -101,6 +111,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What's your web address?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              required
             />
           </label>
           <label className='flex flex-col'>
@@ -112,6 +123,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder='What you want to say?'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              required
             />
           </label>
 
