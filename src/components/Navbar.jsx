@@ -55,7 +55,17 @@ const Navbar = () => {
                 } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              {nav.id === "Resume" ? (
+                <a
+                  href="https://drive.google.com/file/d/1wQ-IRWA4WW7AL8ckM2K6L8STvL-sjpit/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {nav.title}
+                </a>
+              ) : (
+                <a href={`#${nav.id}`}>{nav.title}</a>
+              )}
             </li>
           ))}
         </ul>
@@ -83,7 +93,17 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  {nav.id === "Resume" ? (
+                    <a
+                      href="https://drive.google.com/file/d/1QwQw7uO3cu6UytzszbmWzxubUANe0yoy/view?usp=sharing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {nav.title}
+                    </a>
+                  ) : (
+                    <a href={`#${nav.id}`}>{nav.title}</a>
+                  )}
                 </li>
               ))}
             </ul>

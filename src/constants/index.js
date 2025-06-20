@@ -42,10 +42,16 @@ import bridge_logo from "../assets/company/company_logo.png";
 
 import portfolio from '../assets/proj1.webp';
 
+
 export const navLinks = [
   {
     id: "about",
     title: "About",
+
+  },
+  {
+    id: "Resume",
+    title: "Resume",
 
   },
   {
