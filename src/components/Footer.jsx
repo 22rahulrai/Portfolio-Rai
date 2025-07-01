@@ -1,5 +1,5 @@
 import React from "react";
-import { FaHackerrank, FaGithub, FaLinkedin } from "react-icons/fa6";
+import { FaHackerrank, FaGithub, FaLinkedin, FaCode } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
       </a> */}
       <a href="https://github.com/22rahulrai" target="_blank" rel="noopener noreferrer">
         <FaGithub size={24} />
-      </a> 
+      </a>
       <a
         href="https://www.linkedin.com/in/rairahul22/"
         target="_blank"
@@ -21,7 +21,14 @@ const Footer = () => {
       >
         <FaLinkedin size={24} />
       </a>
-      
+      <a
+        href="https://leetcode.com/u/Rahul_Rai22/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaCode size={24} />
+      </a>
+
     </footer>
   );
 };
