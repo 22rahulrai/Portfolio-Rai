@@ -95,7 +95,7 @@ const Navbar = () => {
                 >
                   {nav.id === "Resume" ? (
                     <a
-                      href="https://drive.google.com/file/d/1QwQw7uO3cu6UytzszbmWzxubUANe0yoy/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1wQ-IRWA4WW7AL8ckM2K6L8STvL-sjpit/view?usp=sharing"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
