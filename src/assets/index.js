@@ -13,6 +13,7 @@ import secondTestimonial from './image.webp';
 import thirdTestimonial from './third testimonial.webp';
 import Homehaven from './Home-Haven.png';
 import python_project from './python-project.png';
+import snake_ladder from './snake-ladder.png';
 
 // Tech group
 import Csharp from "./tech/csharp.svg";
@@ -54,6 +55,8 @@ export {
   thirdTestimonial,
   Homehaven,
   python_project,
+  snake_ladder,
+
   // Tech group
   Csharp,
   java,

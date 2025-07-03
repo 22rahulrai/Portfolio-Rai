@@ -11,6 +11,9 @@ import {
   gearXpert,
   Homehaven,
   python_project,
+  snake_ladder,
+
+
   mysql,
   express,
   aws,
@@ -310,28 +313,28 @@ const projects = [
   },
 
   // in future i will add this project
-  // {
-  //   name: "Rahul Rai project",
-  //   description:
-  //     "A modern web application showcasing my portfolio and projects. Built with React and Three.js, featuring interactive 3D elements and smooth animations.",
-  //   tags: [
-  //     {
-  //       name: "react",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "three.js",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "tailwind",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: logo, // Using your existing logo as a placeholder
-  //   source_code_link: "https://github.com/22rahulrai/Portfolio",
-  //   deployment_link: "https://rahulrai-portfolio.vercel.app/",
-  // },
+  {
+    name: "Snake-Ladder Game",
+    description:
+      " A simple, interactive two-player Snakes & Ladders game for the console, built with C# and .NET 8. Play head-to-head, roll the dice, and race to 100!",
+    tags: [
+      {
+        name: "c#",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "dotnet",
+        color: "green-text-gradient",
+      },
+      {
+        name: "console",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: snake_ladder, // Using your existing logo as a placeholder
+    source_code_link: "https://github.com/22rahulrai/Console-Snakes-Ladders-2player",
+    // deployment_link: "https://github.com/22rahulrai/Console-Snakes-Ladders-2player",
+  },
 
 ];
 
